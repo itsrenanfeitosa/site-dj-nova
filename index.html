@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DJ NOVA — Música para eventos inesquecíveis</title>
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Arquivo de Estilos (CSS) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Menu -->
+  <header id="hd">
+    <div class="w nav">
+      <a class="logo" href="#inicio" id="logo">DJ <i>NOVA</i></a>
+      <button class="bg" id="bg" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="links" id="lk">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#sets">Sets</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contato">Contato</a>
+        <a class="btn p" href="#contato">CONTRATE PARA SEU EVENTO</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Início -->
+    <section class="hero" id="inicio">
+      <div class="beam"></div><div class="beam"></div><div class="beam"></div><div class="beam"></div>
+      <div class="deck" aria-hidden="true"></div>
+      <div class="crowd" aria-hidden="true"></div>
+      
+      <div class="w">
+        <h1>DJ NOVA</h1>
+        <h2>A energia da sua festa começa aqui.</h2>
+        <p>Música, experiência e presença para transformar eventos em momentos inesquecíveis.</p>
+        <div class="cta">
+          <a class="btn p" href="#contato">SOLICITAR ORÇAMENTO</a>
+          <a class="btn" href="#sets">OUVIR MEUS SETS</a>
+        </div>
+      </div>
+      <div class="scroll" aria-hidden="true"></div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+      <div class="w ab">
+        <div class="pt rv" role="img" aria-label="Silhueta do DJ — substitua por foto real">
+          <small>Foto do artista (substituir)</small>
+          <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMax slice">
+            <path d="M150 40c-26 0-42 20-42 46 0 18 8 32 20 40-40 10-68 36-72 174h188c-4-138-32-164-72-174 12-8 20-22 20-40 0-26-16-46-42-46z" fill="#06060a"/>
+            <path d="M104 96c-20 0-26 22-26 44M196 96c20 0 26 22 26 44" stroke="#06060a" stroke-width="14" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="rv">
+          <h2>MAIS QUE MÚSICA. UMA EXPERIÊNCIA.</h2>
+          <p class="sub">DJ NOVA mistura house, funk e open format em sets que respondem à pista em tempo real. Cada apresentação começa com uma conversa sobre o público, o horário e o clima da festa, e o repertório é montado para que ninguém fique parado.</p>
+          <p class="sub">De casamentos a clubes e festivais, a energia sobe aos poucos, sem quebras, até o momento que todos vão lembrar.</p>
+          <div class="st" id="stats"></div>
+          <p class="demo">* Números de demonstração. Edite em STATS no código JS.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estilos Musicais -->
+    <section id="estilos">
+      <div class="w">
+        <h2 class="rv">UM SOM PARA CADA PISTA.</h2>
+        <div class="grid4" id="styles"></div>
+      </div>
+    </section>
+
+    <!-- Sets e Mixes -->
+    <section id="sets" style="background:var(--s1);border-block:1px solid var(--ln)">
+      <div class="w">
+        <h2 class="rv">SETS E MIXES.</h2>
+        <p class="sub">Exemplos demonstrativos. Para ativar um player real, cole o link do SoundCloud ou YouTube no campo <code>embed</code> de cada set no arquivo JavaScript.</p>
+        <div class="sets" id="sets-l"></div>
+      </div>
+    </section>
+
+    <!-- Portfólio / Galeria -->
+    <section id="portfolio">
+      <div class="w">
+        <h2 class="rv">NA PISTA, NO PALCO, NA MEMÓRIA.</h2>
+        <div class="fl" id="fl"></div>
+        <div class="gal" id="gal"></div>
+      </div>
+    </section>
+
+    <!-- Agenda / Eventos -->
+    <section id="eventos" style="background:var(--s1);border-block:1px solid var(--ln)">
+      <div class="w">
+        <h2 class="rv">PRÓXIMAS DATAS.</h2>
+        <p class="sub">Eventos de demonstração, edite em EVENTS no arquivo JavaScript.</p>
+        <div class="ag" id="ag"></div>
+        <p class="empty" id="em">Novas datas serão anunciadas em breve. Quer o DJ NOVA na sua festa? Peça um orçamento abaixo.</p>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos">
+      <div class="w">
+        <h2 class="rv">QUEM CONTRATOU, VOLTOU.</h2>
+        <div class="tg" id="tg"></div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="ct" id="contato">
+      <div class="w ctg">
+        <div class="rv">
+          <h2>VAMOS FAZER ESSE EVENTO ACONTECER?</h2>
+          <p class="sub">Preencha o formulário e envie os dados pelo WhatsApp. A resposta chega com valores e disponibilidade da data.</p>
+          <p class="sub" style="margin-top:1.2rem">E-mail: <a href="mailto:contato@djnova.exemplo" style="color:#fff">contato@djnova.exemplo</a> (exemplo)</p>
+          <div class="soc" id="soc"></div>
+        </div>
+
+        <form id="fm" novalidate class="rv">
+          <label class="f">Nome<input name="nome" autocomplete="name" required><em></em></label>
+          <label class="f">Telefone<input name="tel" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required><em></em></label>
+          <label class="f">Tipo de evento
+            <select name="tipo" required>
+              <option value="">Selecione</option>
+              <option>Casamento</option>
+              <option>Aniversário</option>
+              <option>Corporativo</option>
+              <option>Clube / balada</option>
+              <option>Festival</option>
+              <option>Outro</option>
+            </select>
+            <em></em>
+          </label>
+          <label class="f">Data<input name="data" type="date" required><em></em></label>
+          <label class="f full">Cidade<input name="cidade" required><em></em></label>
+          <label class="f full">Mensagem<textarea name="msg" rows="4" placeholder="Horário, público esperado, estilo musical..."></textarea><em></em></label>
+          
+          <button class="btn p" type="submit">SOLICITAR ORÇAMENTO</button>
+          <a class="btn" id="wa" href="#" target="_blank" rel="noopener">CHAMAR NO WHATSAPP</a>
+          <p id="msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="w ft">
+      <a class="logo" href="#inicio">DJ <i>NOVA</i></a>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#sets">Sets</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <nav id="fs"></nav>
+      <span>© 2026 DJ NOVA. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- Modal / Lightbox para imagens -->
+  <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <div id="lbi"><p id="lbt"></p></div>
+    <button id="lbx" aria-label="Fechar">×</button>
+  </div>
+
+  <!-- Arquivo de Comportamento (JavaScript) -->
+  <script src="script.js"></script>
+</body>
+</html>
